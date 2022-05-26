@@ -28,9 +28,11 @@ def vidas():
         vida = str(input(f'{c.v}Quieres elejir la cantidad de vidas si{c.r}[S]{c.v} no{c.r}[N]{c.off}: '))
         banner()
         if vida == 'si' or vida == 'S' or vida == 's':
-            vida = int(input('Cuantas vidas quieres: '))
-            print(f'Iniciaras con {vida} vidas')
+            vida = int(input(f'{c.v}Cuantas vidas quieres: {c.off}'))
+            banner()
+            print(f'{c.v}Iniciaras con {c.r}{vida} {c.v}vidas{c.off}')
             time.sleep(1.4)
+            banner()
             print(f'{c.v}Pre{c.r}par{c.y}ado{c.b}!!!{c.off}')
             time.sleep(1.4)
             print(f"{c.b}GO{c.v}!!{c.m}!{c.off}")
