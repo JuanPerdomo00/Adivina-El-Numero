@@ -46,7 +46,7 @@ def vidas():
         return vida
     else:
         print('Ingrese una opcion valida')
-
+        exit(1)
 
 def adivina_numero(n):
     vida = vidas()
