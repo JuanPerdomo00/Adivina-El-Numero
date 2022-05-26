@@ -8,6 +8,7 @@ function saludar() {
     sleep 1
     brew install cowsay
     brew install lolcat
+    pip3 install -r requirements.txt
     sleep 1
     echo "Descargado :)"
 }
