@@ -1,0 +1,4 @@
+# ! GitIgnore
+.idea/
+venv
+__pycache__
