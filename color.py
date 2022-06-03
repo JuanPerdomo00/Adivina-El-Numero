@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+# _*_ coding: utf-8 -*-
+# Copyright (c) 2022 Jakepy Perdomo <j4kyjak3@protonmail.com>.
 from colorama import Fore
 
 
 class Color:
-    #? Colores para la salida de la terminal
+    # ? Colores para la salida de la terminal
     # * rojo
     r: str = Fore.RED
     # * verde
@@ -15,5 +17,5 @@ class Color:
 
     m: str = Fore.MAGENTA
 
-    #! Detiene la ejecucion dedl color
+    # ! Detiene la ejecucion dedl color
     off: str = Fore.RESET
