@@ -1,10 +1,26 @@
 #!/usr/bin/python3
-# create by: jakepy
+# _*_ coding: utf-8 -*-
+#
+#    create by: jakepy Perdomo <j4kyjak3@protonmail.com>
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; version 2 of the License.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
 import random
 from color import Color as c
 import platform
 import time
 import os
+
 
 # ? limpia la pantalla dependiendo de el sistema operativo
 def clear():
@@ -22,7 +38,7 @@ def banner():
     print(f'{c.y}*{c.off}' * 45)
 
 
-# ? fumcion de vidas
+# ? funcion de vidas
 def vidas():
     try:
         vida = str(input(f'{c.v}Quieres elejir la cantidad de vidas si{c.r}[S]{c.v} no{c.r}[N]{c.off}: '))
@@ -76,7 +92,6 @@ def adivina_numero(n):
             print(f'{c.v}El numero era: {c.r}{numero_random}{c.off}')
             break
 
-
         if numero_user < numero_random:
             print(f'{c.v}Busca un numero mayor a {c.r}{numero_user}{c.off}')
             vida -= 1
@@ -87,8 +102,9 @@ def adivina_numero(n):
 
         if numero_user == numero_random:
             banner()
-            print('\n🥳 {} Ganaste el numero era: {} {}🥳\n'.format(c.m,c.off, numero_random))
+            print('\n🥳 {} Ganaste el numero era: {} {}🥳\n'.format(c.m, c.off, numero_random))
             break
+
 
 # ? fUNCION PRINCIPAL ARRANCA EL PROGRAMA
 def main():
@@ -103,7 +119,6 @@ def main():
     except KeyboardInterrupt:
         banner()
         print('\n{} Salio forzado. {}'.format(c.r, c.off))
-    
 
 
 if __name__ == '__main__':
