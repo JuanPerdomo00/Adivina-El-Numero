@@ -14,8 +14,6 @@ class Color:
     b: str = Fore.BLUE
     # * amarillo
     y: str = Fore.YELLOW
-
     m: str = Fore.MAGENTA
-
     # ! Detiene la ejecucion dedl color
     off: str = Fore.RESET
