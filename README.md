@@ -13,3 +13,12 @@ zsh run.sh
 pip3 install -r requirements.txt
 python3 script.py
 ```
+
+## Usar el ejecutable (LINUX)
+```
+chmod 755 adivina_el_numero
+./adivina_el_numero
+```
+[![video desmostracion](https://gravatar.com/avatar/c52c7aa428a6082ae904024e7fe6b5e9?s=128&d=retro)](https://asciinema.org/a/499822) 
+
+
